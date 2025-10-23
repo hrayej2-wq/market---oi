@@ -1,0 +1,98 @@
+body {
+    font-family: 'Nazanin', 'Tahoma', sans-serif;
+    direction: rtl;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.date-selector {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.date-selector label {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.date-selector select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.loading {
+    text-align: center;
+    color: #777;
+    font-size: 18px;
+    margin: 20px 0;
+    display: none;
+}
+
+.chart-container {
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.expanded-row td {
+    padding: 0;
+}
+
+.expanded-content {
+    padding: 10px;
+}
+
+.symbol-chart-container {
+    height: 350px;
+    width: 100%;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    font-size: 18px;
+}

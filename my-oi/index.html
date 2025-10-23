@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحلیل داده‌های بورس</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>تحلیل داده‌های بازار بورس</h1>
+        <div class="date-selector">
+            <label for="dateSelect">انتخاب تاریخ:</label>
+            <select id="dateSelect" onchange="loadData()">
+                <!-- تاریخ‌ها به صورت پویا از script.js اضافه می‌شوند -->
+            </select>
+        </div>
+        <div id="loading" class="loading">در حال بارگذاری داده‌ها...</div>
+        
+        <h2>نمودار کل بازار</h2>
+        <div id="marketChartContainer" class="chart-container">
+            <canvas id="marketOiChart"></canvas>
+        </div>
+        
+        <h2>۱۰ نماد برتر (روز اول)</h2>
+        <div id="topOiDay1ChartContainer" class="chart-container">
+            <canvas id="topOiDay1Chart"></canvas>
+        </div>
+        
+        <h2>۱۰ نماد برتر (روز دوم)</h2>
+        <div id="topOiDay2ChartContainer" class="chart-container">
+            <canvas id="topOiDay2Chart"></canvas>
+        </div>
+        
+        <h2>جدول داده‌ها</h2>
+        <div id="dataTable" class="table-container">
+            <!-- جدول داده‌ها اینجا به صورت پویا از script.js ساخته می‌شود -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
